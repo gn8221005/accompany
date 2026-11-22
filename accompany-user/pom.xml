@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.accompany</groupId>
+        <artifactId>accompany</artifactId>
+        <version>3.9.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>accompany-user</artifactId>
+    <name>accompany-user</name>
+    <description>用户端 API 模块</description>
+
+    <dependencies>
+        <!-- 通用响应、鉴权注解与基础工具 -->
+        <dependency>
+            <groupId>com.accompany</groupId>
+            <artifactId>accompany-common</artifactId>
+        </dependency>
+
+        <!-- 陪诊共享业务能力 -->
+        <dependency>
+            <groupId>com.accompany</groupId>
+            <artifactId>accompany-business</artifactId>
+        </dependency>
+
+        <!-- OpenAPI 3 注解支持；Swagger UI 仍由管理端统一提供 -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>
